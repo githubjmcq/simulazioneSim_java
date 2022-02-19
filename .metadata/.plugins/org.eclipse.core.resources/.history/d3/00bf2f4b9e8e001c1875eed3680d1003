@@ -1,0 +1,23 @@
+package esercizi;
+/*
+Creare una classe ‘potenza’ , con un campo intero “base”,
+dotata di costruttore che prende in input un numero a e lo salva in base,
+di un metodo pow() che stampi a video la potenza di base (ossia stampa il prodotto di base*base), 
+e di un metodo cambiobase() che permette di cambiare il campo “base”*/	
+public class Potenza {
+	
+	int base;
+
+	void Potenza(int a) {
+		this.base = a;
+	}
+	
+	void pow() {
+		System.out.println(base * base);
+	}
+	void cambioBase(int nuovaBase) {
+		base = nuovaBase;
+		System.out.println(base);
+	}
+}
+

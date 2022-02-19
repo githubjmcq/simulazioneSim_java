@@ -1,0 +1,23 @@
+package esercizi;
+/*
+Creare una classe ContoCorrente in grado di simulare un conto corrente reale, 
+quindi con versamenti, prelievi, stampa saldo e dammi la lista degli ultimi 5 movimenti.*/	
+public class contoCorrente {
+	
+	int base;
+
+
+	
+	 Potenza(int a) {
+		base = a;
+	}
+
+	void pow() {
+		System.out.println(base * base);
+	}
+	void cambioBase(int nuovaBase) {
+		base = nuovaBase;
+		System.out.println(base);
+	}
+}
+

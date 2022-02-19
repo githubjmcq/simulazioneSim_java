@@ -1,0 +1,47 @@
+package esercizi;
+import java.util.ArrayList;
+
+/*
+Creare una classe ContoCorrente in grado di simulare un conto corrente reale, 
+quindi con versamenti, prelievi, stampa saldo e dammi la lista degli ultimi 5 movimenti.
+L’esercizio precedente deve, per gli ultimi 5 movimenti, salvare anche il saldo nel momento in cui il movimento viene eseguito.
+Ad esempio se si fa un versamento di 5000 euro e il saldo è 300. Il nuovo saldo sarà 5300 euro.
+La classe dovrà memorizzare l’informazione che sono stati versati 5000 euro e che il saldo era, prima di eseguire l’operazione, di 300 euro	
+public class contoCorrente {
+	
+	double saldo;
+	ArrayList<ArrayList<Double>> movimenti = new ArrayList<ArrayList<Double>>();
+
+	 void versamenti(double versamento) {
+		double saldoPreMov = saldo;
+		saldo = saldo + versamento;
+		double saldoAttuale = saldo;
+		ArrayList<Double> movimento = new ArrayList<Double>();
+		movimento.add(versamento);
+		movimento.add(saldoPreMov);
+		movimento.add(saldoAttuale);
+		movimenti.add(movimento);
+	}
+	 void prelievi(double prelievo) {
+		double saldoPreMov = saldo;
+		saldo = saldo - prelievo;
+		double saldoAttuale = saldo;
+		ArrayList<Double> movimento = new ArrayList<Double>();
+		movimento.add(prelievo);
+		movimento.add(saldoPreMov);
+		movimento.add(saldoAttuale);
+		movimenti.add(movimento);
+	 }
+	 void stampaSaldo() {
+		 System.out.println(saldo);
+	 }
+	 void ultimiMovimenti() {
+		 for(int i = movimenti.size() - 1; i > movimenti.size() - 6; i--) {
+			 System.out.println("movimento: ");
+			 for(int j = 0; j < 3; j++ ) {
+			 	System.out.println(movimenti.get(i).get(j));
+			 }
+		 }
+	 }
+}
+*/

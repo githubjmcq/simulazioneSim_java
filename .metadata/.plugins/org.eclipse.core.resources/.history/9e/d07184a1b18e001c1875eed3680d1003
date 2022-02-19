@@ -1,0 +1,18 @@
+package esercizi;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class main{
+	
+	public static void main(String[] args) {
+		
+		Potenza potenza = new Potenza(918);
+		Potenza potenza2 = new Potenza(27);
+		
+		potenza.pow();
+		potenza2.pow();
+
+		potenza.cambioBase(682);
+		potenza2.cambioBase(35);
+		}	
+}

@@ -1,0 +1,35 @@
+package esercizi;
+import java.util.ArrayList;
+
+public class SIM {
+	/*Progettare una applicazione che simula un operatore di telefonia cellulare.
+	 * Si devono quindi gestirei dati relativi ad una carta SIM ed in particolare: 
+	 * il numero di telefono, il credito disponibile, la lista delle telefonate effettuate e la durata di ogni telefonata. 
+	 * La classe SIM dovrà fornire, inoltre, le seguenti funzionalità: un costruttore parametrizzato che crea una SIM con numero di telefono,
+	 * un credito e la lista delle telefonate vuota; un metodo per inserire una telefonata con i relativi dati; 
+	 * un metodo per il calcolo dei minuti totali di conversazione; metodo per il calcolo delle telefonate effettuate verso un determinato numero;
+	 * metodo per la stampa dei dati della SIM e l’elenco delle telefonate.
+	 */
+	
+	int numTelefono;
+	double credito;
+	int numTelefonate;
+	double MinTotTelefonate;
+	ArrayList<ArrayList<Integer>> datiTelefonate = new ArrayList<ArrayList<Integer>>();
+	
+	SIM(int numTelefono, double credito) {
+		
+		this.numTelefono = numTelefono;
+		this.credito = credito;
+		
+	}
+	
+	void chiama(int destinatario, int minutiTelefonata) {
+		
+		ArrayList<Integer> telefonata = new ArrayList<Integer>(); 
+		telefonata.add(destinatario);
+		telefonata.add(minutiTelefonata);
+		
+	}
+	
+}
