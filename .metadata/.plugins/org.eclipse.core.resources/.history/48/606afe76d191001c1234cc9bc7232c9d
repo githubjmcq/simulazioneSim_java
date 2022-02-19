@@ -11,11 +11,11 @@ public class SIM {
 	 * metodo per la stampa dei dati della SIM e l’elenco delle telefonate (numero destinatario e durata).
 	 */
 	
-	private int numTelefono;
-	private double credito;
-	private int numTelefonate;
-	private ArrayList<Integer> destinatari = new ArrayList<Integer>();
-	private ArrayList<Integer> MinTotTelefonate = new ArrayList<Integer>();
+	int numTelefono;
+	double credito;
+	int numTelefonate;
+	ArrayList<Integer> destinatari = new ArrayList<Integer>();
+	ArrayList<Integer> MinTotTelefonate = new ArrayList<Integer>();
 	
 	SIM(int numTelefono, double credito) {
 		
