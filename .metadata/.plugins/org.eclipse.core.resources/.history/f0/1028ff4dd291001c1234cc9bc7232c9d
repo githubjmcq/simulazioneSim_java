@@ -21,8 +21,7 @@ public class main{
 			sim.chiama(number, minuti);
 			sim.attributiSim();
 			sim.elencoTelefonate();
-		}else {
-			System.out.println("Programma terminato");
 		}
+		System.out.println("Programma terminato");
 	}	
 }
