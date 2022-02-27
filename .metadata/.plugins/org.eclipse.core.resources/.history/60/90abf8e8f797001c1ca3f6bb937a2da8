@@ -8,13 +8,10 @@ public class main{
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Crea il tuo numero di telefono");
-		
 		System.out.println("inserisci il tuo numero:");
 		int numero = scanner.nextInt();
 		System.out.println("inserisci il tuo credito:");
 		int credito = scanner.nextInt();
-		
-		scanner.nextLine();
 		
 		SIM sim = new SIM(numero, credito);
 

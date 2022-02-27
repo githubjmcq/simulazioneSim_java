@@ -13,7 +13,6 @@ public class main{
 		int numero = scanner.nextInt();
 		System.out.println("inserisci il tuo credito:");
 		int credito = scanner.nextInt();
-		
 		scanner.nextLine();
 		
 		SIM sim = new SIM(numero, credito);
