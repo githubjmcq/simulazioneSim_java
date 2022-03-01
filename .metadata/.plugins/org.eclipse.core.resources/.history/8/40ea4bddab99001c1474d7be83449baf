@@ -18,8 +18,8 @@ public class main{
 		
 		SIM sim = new SIM(numero, credito);
 		
-		int number;
-		int minuti;
+		int number = 0;
+		int minuti = 0;
 
 		System.out.println("Vuoi telefonare? \ndigita: si oppure no");
 		String risposta = scanner.nextLine();
@@ -31,15 +31,15 @@ public class main{
 			System.out.println("Quanti minuti vuoi telefonare?");
 			minuti = scanner.nextInt();
 			scanner.nextLine();
-			sim.chiama(number, minuti);
 			
 			System.out.println("telefonata effettuata");
 			
 			System.out.println("\nVuoi ancora telefonare? \ndigita: si oppure no");
 			risposta = scanner.nextLine();
 		}
+		sim.chiama(number, minuti);
 		sim.attributiSim();
 		sim.elencoTelefonate();
-		System.out.println("\nProgramma terminato");
+		System.out.println("Programma terminato");
 	}	
 }

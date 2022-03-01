@@ -40,6 +40,6 @@ public class main{
 		}
 		sim.attributiSim();
 		sim.elencoTelefonate();
-		System.out.println("\nProgramma terminato");
+		System.out.println("Programma terminato");
 	}	
 }

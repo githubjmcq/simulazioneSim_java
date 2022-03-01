@@ -17,29 +17,26 @@ public class main{
 		scanner.nextLine();
 		
 		SIM sim = new SIM(numero, credito);
-		
-		int number;
-		int minuti;
 
 		System.out.println("Vuoi telefonare? \ndigita: si oppure no");
 		String risposta = scanner.nextLine();
 	
 		while(risposta.equals("si")) {
 			
+
+			
 			System.out.println("Inserisci il numero da telefonare:");
-			number = scanner.nextInt();
+			int number = scanner.nextInt();
 			System.out.println("Quanti minuti vuoi telefonare?");
-			minuti = scanner.nextInt();
-			scanner.nextLine();
-			sim.chiama(number, minuti);
+			int minuti = scanner.nextInt();
 			
 			System.out.println("telefonata effettuata");
 			
-			System.out.println("\nVuoi ancora telefonare? \ndigita: si oppure no");
-			risposta = scanner.nextLine();
+			sim.chiama(number, minuti);
+			sim.attributiSim();
+			sim.elencoTelefonate();
+		}else {
+			System.out.println("Programma terminato");
 		}
-		sim.attributiSim();
-		sim.elencoTelefonate();
-		System.out.println("\nProgramma terminato");
 	}	
 }
