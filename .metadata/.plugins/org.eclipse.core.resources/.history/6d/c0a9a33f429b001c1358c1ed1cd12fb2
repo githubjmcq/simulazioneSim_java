@@ -45,21 +45,12 @@ public class main{
 		
 		while(risposta2.equals("si")) {
 			System.out.println("Inserisci il numero a cui inviare l'sms");
-			int number = scanner.nextInt();
-			scanner.nextLine();
-			System.out.println("scrivi il messaggio:");
-			String messaggio = scanner.nextLine();
-			sim.mandaSMS(number, messaggio);
-			
-			System.out.println("messaggio inviato");
-			
-			System.out.println("\nVuoi ancora mandare un SMS? \ndigita: si oppure no");
-			risposta2 = scanner.nextLine();
+			number = 
+			System.out.println("scrivi:");
 		}
 		
 		sim.attributiSim();
 		sim.elencoTelefonate();
-		sim.elencoSMS();
 		System.out.println("\nProgramma terminato");
 	}	
 }

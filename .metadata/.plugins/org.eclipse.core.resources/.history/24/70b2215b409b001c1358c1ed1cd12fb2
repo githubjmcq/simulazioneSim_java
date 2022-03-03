@@ -14,12 +14,8 @@ public class SIM {
 	private int numTelefono;
 	private double credito;
 	private int numTelefonate;
-	
-	private ArrayList<Integer> destinatariChiamate = new ArrayList<Integer>();
+	private ArrayList<Integer> destinatari = new ArrayList<Integer>();
 	private ArrayList<Integer> MinTotTelefonate = new ArrayList<Integer>();
-	
-	private ArrayList<Integer> destinatariMessaggi = new ArrayList<Integer>();
-	private ArrayList<String> messaggi = new ArrayList<String>();
 	
 	SIM(int numTelefono, double credito) {
 		
@@ -30,19 +26,11 @@ public class SIM {
 	
 	void chiama(int destinatario, int minutiTelefonata) {
 		
-		destinatariChiamate.add(destinatario);
+		destinatari.add(destinatario);
 		MinTotTelefonate.add(minutiTelefonata);
 		credito = credito - (minutiTelefonata * 0.19);
 		numTelefonate++;
 
-	}
-	
-	void mandaSMS(int destinatario, String Messaggio ) {
-		
-		destinatariMessaggi.add(destinatario);
-		messaggi.add(Messaggio);
-		credito = credito - 0.16;
-		
 	}
 	
 	void calcolaMinTotTelefonate() {
@@ -59,8 +47,8 @@ public class SIM {
 		
 		int totChiamate = 0;
 		
-		for(int i = 0; i < destinatariChiamate.size(); i++) {
-			if(destinatario == destinatariChiamate.get(i) ) {
+		for(int i = 0; i < destinatari.size(); i++) {
+			if(destinatario == destinatari.get(i) ) {
 				totChiamate = totChiamate + 1;
 			}
 		}
@@ -75,22 +63,9 @@ public class SIM {
 	
 	void elencoTelefonate() {
 		
-		System.out.println("\nElenco telefonate: ");
-		
-		for(int i = 0; i < destinatariChiamate.size(); i++) {
-			System.out.print("destinatario: " + destinatariChiamate.get(i) + " ");
+		for(int i = 0; i < destinatari.size(); i++) {
+			System.out.print("destinatario: " + destinatari.get(i) + " ");
 			System.out.println("durata: " + MinTotTelefonate.get(i) + " ");
 		}
-	}
-	
-	void elencoSMS() {
-		
-		System.out.println("\nElenco messaggi: ");
-		
-		for(int i = 0; i < destinatariMessaggi.size(); i++) {
-			System.out.print("destinatario: " + destinatariMessaggi.get(i) + " ");
-			System.out.println("messaggio: " + messaggi.get(i) + " ");
-		}
-		
 	}
 }

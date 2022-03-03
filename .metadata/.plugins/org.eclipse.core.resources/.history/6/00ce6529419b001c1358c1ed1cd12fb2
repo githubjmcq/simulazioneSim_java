@@ -75,22 +75,9 @@ public class SIM {
 	
 	void elencoTelefonate() {
 		
-		System.out.println("\nElenco telefonate: ");
-		
 		for(int i = 0; i < destinatariChiamate.size(); i++) {
 			System.out.print("destinatario: " + destinatariChiamate.get(i) + " ");
 			System.out.println("durata: " + MinTotTelefonate.get(i) + " ");
 		}
-	}
-	
-	void elencoSMS() {
-		
-		System.out.println("\nElenco messaggi: ");
-		
-		for(int i = 0; i < destinatariMessaggi.size(); i++) {
-			System.out.print("destinatario: " + destinatariMessaggi.get(i) + " ");
-			System.out.println("messaggio: " + messaggi.get(i) + " ");
-		}
-		
 	}
 }

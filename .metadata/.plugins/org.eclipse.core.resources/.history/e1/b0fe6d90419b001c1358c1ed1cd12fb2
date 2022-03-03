@@ -21,6 +21,9 @@ public class main{
 		scanner.nextLine();
 		
 		SIM sim = new SIM(numero, credito);
+		
+		int number;
+		int minuti;
 
 		System.out.println("Vuoi telefonare? \ndigita: si oppure no");
 		String risposta1 = scanner.nextLine();
@@ -28,9 +31,9 @@ public class main{
 		while(risposta1.equals("si")) {
 			
 			System.out.println("Inserisci il numero da telefonare:");
-			int number = scanner.nextInt();
+			number = scanner.nextInt();
 			System.out.println("Quanti minuti vuoi telefonare?");
-			int minuti = scanner.nextInt();
+			minuti = scanner.nextInt();
 			scanner.nextLine();
 			sim.chiama(number, minuti);
 			
@@ -45,21 +48,11 @@ public class main{
 		
 		while(risposta2.equals("si")) {
 			System.out.println("Inserisci il numero a cui inviare l'sms");
-			int number = scanner.nextInt();
-			scanner.nextLine();
-			System.out.println("scrivi il messaggio:");
-			String messaggio = scanner.nextLine();
-			sim.mandaSMS(number, messaggio);
-			
-			System.out.println("messaggio inviato");
-			
-			System.out.println("\nVuoi ancora mandare un SMS? \ndigita: si oppure no");
-			risposta2 = scanner.nextLine();
+			System.out.println("scrivi:");
 		}
 		
 		sim.attributiSim();
 		sim.elencoTelefonate();
-		sim.elencoSMS();
 		System.out.println("\nProgramma terminato");
 	}	
 }

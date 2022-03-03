@@ -47,13 +47,13 @@ public class main{
 			System.out.println("Inserisci il numero a cui inviare l'sms");
 			int number = scanner.nextInt();
 			scanner.nextLine();
-			System.out.println("scrivi il messaggio:");
+			System.out.println("scrivi:");
 			String messaggio = scanner.nextLine();
 			sim.mandaSMS(number, messaggio);
 			
 			System.out.println("messaggio inviato");
 			
-			System.out.println("\nVuoi ancora mandare un SMS? \ndigita: si oppure no");
+			System.out.println("Vuoi ancora mandare un SMS? \ndigita: si oppure no");
 			risposta2 = scanner.nextLine();
 		}
 		
