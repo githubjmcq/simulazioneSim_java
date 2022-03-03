@@ -6,6 +6,7 @@ public class main{
 	public static void main(String[] args) {
 		
 		/*Con questa tariffa è possibile telefonare verso tutti al costo di 19 cent al minuto,
+		 * con scatto alla risposta di 20 centesimi (la tariffazione è a scatti anticipati di 60 secondi), 
 		 * mentre gli sms vengono tariffati a 16 cent l’uno.
 		 */
 		

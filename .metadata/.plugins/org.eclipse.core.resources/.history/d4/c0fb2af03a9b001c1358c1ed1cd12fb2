@@ -28,7 +28,6 @@ public class SIM {
 		
 		destinatari.add(destinatario);
 		MinTotTelefonate.add(minutiTelefonata);
-		credito = credito - (minutiTelefonata * 0.19);
 		numTelefonate++;
 
 	}

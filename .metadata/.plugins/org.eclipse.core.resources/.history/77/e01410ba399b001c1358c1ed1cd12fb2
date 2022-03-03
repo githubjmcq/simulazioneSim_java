@@ -5,10 +5,6 @@ public class main{
 	
 	public static void main(String[] args) {
 		
-		/*Con questa tariffa è possibile telefonare verso tutti al costo di 19 cent al minuto,
-		 * mentre gli sms vengono tariffati a 16 cent l’uno.
-		 */
-		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Crea il tuo numero di telefono");
